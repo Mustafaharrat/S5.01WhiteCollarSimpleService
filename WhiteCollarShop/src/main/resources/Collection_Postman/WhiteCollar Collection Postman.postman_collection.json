@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "4255ff3b-41f2-4415-a315-fa07b37c7953",
+		"name": "WhiteCollar Collection Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createShop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"RedCollar\",\r\n    \"capacity\":2\r\n\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/createShop",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"createShop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readShops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/readShops",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"readShops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPicture",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"Tempesta\",\r\n    \"nameAuthor\":\"Turner\",\r\n    \"price\":\"105000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/addPicture/1/createpictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"addPicture",
+						"1",
+						"createpictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fire",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/deletePictures/1/pictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"deletePictures",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readPictures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/getPicturesShop/1/pictures",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"getPicturesShop",
+						"1",
+						"pictures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShopById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/getShops/1",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"getShops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteShop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{PORT}}/deleteShop/2",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"deleteShop",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
